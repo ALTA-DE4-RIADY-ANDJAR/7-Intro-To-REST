@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "72cb6c46-0060-43d4-9859-9a079db48cd4",
+		"name": "REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8963497"
+	},
+	"item": [
+		{
+			"name": "NewsAPI",
+			"item": [
+				{
+					"name": "Get news bitcoin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news Top head lines",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=us",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get news Top head lines business",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines/sources?category=business",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines",
+								"sources"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "business"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post news bitcoin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put news bitcoin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch news bitcoin",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete news bitcoin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{NewsAPIkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SWAPI",
+			"item": [
+				{
+					"name": "Get Planet by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BaseurlSWAPI}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Film by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BaseurlSWAPI}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://swapi.dev/api/film/2",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"film",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get People by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BaseurlSWAPI}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://swapi.dev/api/people/2",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post SWAPI",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BaseurlSWAPI}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete SWAPI",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BaseurlSWAPI}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Regres API",
+			"item": [
+				{
+					"name": "Get Users by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users/2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\" : \"Riady Andjar\",\r\n    \"Job\" : \"Data Engineer\",\r\n    \"Address\" : \"Bandung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Saputra\",\r\n    \"Job\" : \"IT Support\",\r\n    \"Address\" : \"Lembang\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users/780",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"780"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Riady\",\r\n    \"Job\" : \"IT Support\",\r\n    \"Address\" : \"Lembang\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users/780",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"780"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users/780",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"780"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
